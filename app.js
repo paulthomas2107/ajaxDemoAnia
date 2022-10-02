@@ -12,6 +12,7 @@ function showCountries() {
         const countryCardImage = document.createElement('img');
         countryCard.innerHTML = country.name.common;
         countryCardImage.src = country.flags.png;
+        countryCardImage.style = 'width: 20px; height: 20px;';
         countryCard.appendChild(countryCardImage);
         document.getElementById('feed').appendChild(countryCard);
       });
